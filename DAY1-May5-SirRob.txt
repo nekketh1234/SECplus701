@@ -266,12 +266,12 @@ ephone-dn 8
 ephone-dn 10
  number 4198
 Ephone 1
-  Mac-address cafe.face.baba
+  Mac-address 204c.9e6c.e263
   type 8945
   button 1:8 2:7 3:6 4:5
   restart
 Ephone 2
-  Mac-address fafa.caca.baba
+  Mac-address ccd8.c1fa.ee43
   type 8945
   button 1:4 2:3 3:2 4:1
   restart  
@@ -363,6 +363,14 @@ dial-peer voice 81 Voip
 dial-peer voice 82 Voip
  destination-pattern 82..
  session target ipv4:10.82.100.8
+ codec g711ULAW
+dial-peer voice 91 Voip
+ destination-pattern 91..
+ session target ipv4:10.91.100.8
+ codec g711ULAW
+dial-peer voice 92 Voip
+ destination-pattern 92..
+ session target ipv4:10.92.100.8
  codec g711ULAW
 
 TASK3***TASK3***TASK3***
@@ -659,4 +667,5 @@ exit
           
 sip-ua
 sip-server ipv4:192.168.k.1
+
 
